@@ -1,7 +1,20 @@
+import java.util.Scanner;
+
 public class Helloworld {
 
     public static void main(String[] args) {
-        System.out.println("HELLOWORLD!");
-        System.out.println("HELLOWORLD!");
+           Scanner scanner = new Scanner(System.in);
+
+        String account = scanner.next();
+        String password = scanner.next();
+
+        if(account.equals("user") && password.equals("user")){
+            System.out.println("login success.");
+        }else{
+            System.out.println("login fail");
+        }
+        
+       scanner.close();
+
     }
 }
